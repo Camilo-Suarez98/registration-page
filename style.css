@@ -1,0 +1,158 @@
+body {
+    margin: 0px;
+    font-family: 'Muli', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #3d84b8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    width: 200px;
+    margin: 30px;
+}
+
+.register {
+    width: 100%;
+    background: linear-gradient(#3d84b8, #3f3697);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: calc(100vh - 200px);
+}
+
+.register .container {
+    height: 700px;
+    width: 300px;
+    border: 2px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 60px 68px 40px;
+    border-radius: 40px;
+}
+
+.register .container h2 {
+    color: #fff;
+}
+
+.register .container .data {
+    display: flex;
+    flex-direction: column;
+}
+
+.register .container .data > input {
+    background-color: transparent;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+::placeholder {
+    color: #fff;
+    font-size: 16px;
+}
+
+.register .container .data > button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-family: 'Muli', sans-serif;
+}
+
+.register .container p {
+    color: #fff;
+    font-size: 14px;
+}
+
+.register .container p a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register .container p a:hover {
+    text-decoration: underline;
+}
+
+.register .container .anchor {
+    text-align: center;
+}
+
+.register .container .second-anchor {
+    font-size: 20px;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3f3697;
+    height: 100px;
+}
+
+.footer a {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 425px) {
+    .header {
+        justify-content: center;
+    }
+
+    .register .container {
+        padding: 0px;
+        border: none;
+        width: 270px;
+    }
+
+    .register .container h2 {
+        text-align: center;
+    }
+
+    .register .container p {
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        justify-content: center;
+    }
+
+    .footer {
+        justify-content: space-evenly;
+    }
+}
